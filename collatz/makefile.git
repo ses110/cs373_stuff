@@ -1,0 +1,22 @@
+cs:
+
+config:
+	git config -l
+
+count:
+	ls -al | grep "RunCollatz.in"   | wc
+	ls -al | grep "RunCollatz.out"  | wc
+	ls -al | grep "TestCollatz.c++" | wc
+	ls -al | grep "TestCollatz.py"  | wc
+	ls -al | grep "TestCollatz.out" | wc
+
+log:
+	git log
+
+pull:
+	git pull
+
+status:
+	git branch
+	git remote
+	git status
